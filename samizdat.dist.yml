@@ -1,20 +1,20 @@
 ---
 secrets:
   - b3133e5e7c653c995aa10d604fdab9917430ff26
-sitename: Example
-shortsitename: Example
-description: Example, a fullstack static content hybrid generator for extreme speed and optional disconnected use.
-siteurl: https://fakenews.com/
-host: fakenews.com
-cookiedomain: .fakenews.com
+sitename: Flip a vote
+shortsitename: Flip a vote
+description: Flip a vote, a fullstack static content hybrid generator for extreme speed and optional disconnected use.
+siteurl: https://flipavote.com/
+host: flipavote.com
+cookiedomain: .flipavote.com
 authcookiename: samizauth
-datacookiename: samizdata
-logotype: media/images/fakenews.svg
+datacookiename: flipavotea
+logotype: media/images/flipavote.svg
 favicon: media/images/f.svg
 backgroundcolor: '#fff'
 themecolor: '#0b0'
 icons:
-  large: src/svg/fakenews.svg
+  large: src/svg/flipavote.svg
   small: src/svg/f.svg
   sizes:
     - 32
@@ -42,7 +42,7 @@ robots: |
 humans: |
   /* DEVELOPERS */
     Lead: Hans Svensson
-    Contact: hans[at]fakenews.com
+    Contact: hans[at]flipavote.com
     From: Lund, Sweden
   
     You could be listed here too. Make your contributions on https://github.com/FakenewsCom/Samizdat.
@@ -53,23 +53,23 @@ humans: |
     Programming languages: Perl, Javascript, SQL, Shellscript, Lua, Makefile, SCSS, CSS
     IDE: Intellij IDEA Ultimate Edition
 ads: |
-  placeholder.fakenews.com, placeholder, DIRECT, placeholder
+  placeholder.flipavote.com, placeholder, DIRECT, placeholder
 security: |
   # Our security address
-  Contact: mailto:security@fakenews.com
+  Contact: mailto:security@flipavote.com
   
   # Our OpenPGP key
-  Encryption: https://fakenews.com/security/pgp-key.txt
+  Encryption: https://flipavote.com/security/pgp-key.txt
   
   # Our security policy
-  Policy: https://fakenews.com/security
+  Policy: https://flipavote.com/security
   
   # Our security acknowledgements
-  Acknowledgements: https://fakenews.com/security/acknowledgements
+  Acknowledgements: https://flipavote.com/security/acknowledgements
   
   Preferred-Languages: en,sv
   
-  Canonical: https://fakenews.com/.well-known/security.txt
+  Canonical: https://flipavote.com/.well-known/security.txt
 layout: bootstrap
 captcha:
   session_name: captcha_string
@@ -78,26 +78,26 @@ captcha:
   width: 460
   height: 60
 mail:
-  from: noreply@fakenews.com
+  from: noreply@flipavote.com
   type: text/html
   how: smtp
   howargs:
-    - smtp.fakenews.com
+    - smtp.flipavote.com
     - AuthUser
-    - account@fakenews.com
+    - account@flipavote.com
     - AuthPass
     - s3cr3t
 hypnotoad:
   listen:
     - http://0.0.0.0:3000?reuse=1
-    - http+unix://bin%2Fsamizdat.sock
+    - http+unix://bin%2Fflipavote.sock
   workers: 4
 extratemplates:
   - /usr/local/share/perl/5.30.0/Mojolicious/resources/templates/mojo
 nginx: 1
 cache: 1
 makewebp: 1
-bundlename: samizdat
+bundlename: flipavote
 timezone: Etc/UTC
 account:
   # Try these methods for password validation. They should be listed by strength. Used to migrate other user databases.
@@ -124,11 +124,11 @@ account:
   superadmins:
 #    superadmin: s3cr3t_Pa55w0r6
 pgsql:
-  user: samizdat
+  user: flipavote
   password: s3cr3t
   host: '%2Fvar%2Frun%2Fpostgresql'
   port: 5432
-  database: samizdat
+  database: flipavote
 redis:
   host: 127.0.0.1
   port: 6379
@@ -137,12 +137,12 @@ piratebay:
   login: username
   password: s3cr3t
 locale:
-  textdomain: com.fakenews
+  textdomain: com.flipavote
   project: Samizdat
   Project-Id-Version: Samizdat
-  Report-Msgid-Bugs-To: Webmaster <webmaster@fakenews.com>
-  Last-Translator: Webmaster <webmaster@fakenews.com>
-  Language-Team: Webmaster <webmaster@fakenews.com>
+  Report-Msgid-Bugs-To: Webmaster <webmaster@flipavote.com>
+  Last-Translator: Webmaster <webmaster@flipavote.com>
+  Language-Team: Webmaster <webmaster@flipavote.com>
   PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE
   POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE
   MIME-Version: 1.0
@@ -151,17 +151,17 @@ locale:
   Language: en
   languages:
     en:
-      Report-Msgid-Bugs-To: Webmaster <webmaster@fakenews.com>
-      Last-Translator: Webmaster <webmaster@fakenews.com>
-      Language-Team: Webmaster <webmaster@fakenews.com>
+      Report-Msgid-Bugs-To: Webmaster <webmaster@flipavote.com>
+      Last-Translator: Webmaster <webmaster@flipavote.com>
+      Language-Team: Webmaster <webmaster@flipavote.com>
     sv:
-      Report-Msgid-Bugs-To: Webmaster <webmaster@fakenews.com>
-      Last-Translator: Webmaster <webmaster@fakenews.com>
-      Language-Team: Webmaster <webmaster@fakenews.com>
+      Report-Msgid-Bugs-To: Webmaster <webmaster@flipavote.com>
+      Last-Translator: Webmaster <webmaster@flipavote.com>
+      Language-Team: Webmaster <webmaster@flipavote.com>
     ru:
-      Report-Msgid-Bugs-To: Webmaster <webmaster@fakenews.com>
-      Last-Translator: Webmaster <webmaster@fakenews.com>
-      Language-Team: Webmaster <webmaster@fakenews.com>
+      Report-Msgid-Bugs-To: Webmaster <webmaster@flipavote.com>
+      Last-Translator: Webmaster <webmaster@flipavote.com>
+      Language-Team: Webmaster <webmaster@flipavote.com>
       flag: ru
       name: русский
   default_language: en
